@@ -1,0 +1,129 @@
+@use "anidacion";
+//variable
+$color-principal: #ff73da;
+$color-letra: #000000;
+
+body{
+    background-image: linear-gradient(135deg, #f8e964fe, #f624e531, #fb1dff5b,#a11dff,
+    #ff34f8 ,#ff04d974,#ff4ded8b, #ee5af8b7);
+    background-size: 300%;
+    animation: Ondas 10s infinite;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif ;
+    margin: 10px;
+    padding: 10px;
+
+    menu0 {
+
+    list-style: none;
+    display: inline-block;
+    columns: 9;
+    text-align:initial;
+    padding:2% ;
+    }
+}
+    
+nav ul li a  {
+
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 20px;
+    justify-content:space-between;
+    display: inline-block;
+    }
+
+.fecha {
+
+    font-weight: bold ;
+    font-size: 90%;
+    padding: 0px;
+    text-decoration: none;
+
+    }
+}
+
+
+header {
+
+    background-color: #e485fcc9;
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+    justify-content:center;
+    align-items:left ;
+    margin: 10px;
+    padding: 1px;
+    border: 10px solid snow;
+ }
+
+    .descripción {
+
+    display: flex;
+    text-align: center;
+    -ms-text-combine-horizontal: bold ;
+    font-size: 190%;
+    padding: 2%;
+    }
+}
+
+section {
+
+    background-color:  #e485fcc9;
+    margin: 10px;
+    padding: 10px;
+    border: 10px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;   
+    }
+}         
+
+fieldset {
+    
+    section.BOTON {
+
+    height: 50px;
+    width: 100px;
+    margin: 0px;
+    margin-left: 550px;
+    background-color: #efeb2f;
+    border-bottom-width: 100px;
+    border-bottom-width: 100px;
+    border-top-style:double;
+
+    }
+}
+
+form {
+    
+    margin: 10px;
+    text-align: center;
+    justify-content:center;
+}
+   
+footer {
+
+    background-color:#e485fcc9 ;
+    display:flex ;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 10px;
+    padding: 10px;
+    border: 10px solid snow;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+
+@keyframes Ondas{
+  0%{
+        background-position: 0% 50%;
+  }
+
+  50%{
+        background-position: 100% 50%;
+    }
+  50%{
+        background-position: 50% 100%; 
+    }
+}

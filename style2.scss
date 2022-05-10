@@ -1,0 +1,95 @@
+@use "anidacion";
+//variables
+$color-principal: #ff73da;
+$color-letra: #000000;
+
+    
+body{
+    background-image: linear-gradient(135deg, #f8e964fe, #f624e531, #fb1dff5b,#a11dff,
+    #ff34f8 ,#ff04d974,#ff4ded8b, #ee5af8b7);
+    background-size: 300%;
+    animation: Ondas 10s infinite;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif ;
+    margin: 10px;
+    padding: 10px;
+
+    menu0 {
+
+    list-style: none;
+    display: inline-block;
+    columns: 9;
+    text-align:initial;
+    padding:2% ;
+    }
+}
+    
+nav ul li a  {
+
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 20px;
+    justify-content:space-between;
+    display: inline-block;
+    }
+
+.fecha {
+
+    font-weight: bold ;
+    font-size: 90%;
+    padding: 0px;
+    text-decoration: none;
+
+    }
+}
+
+
+header {
+
+    background-color: #e485fcc9;
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+    justify-content:center;
+    align-items:left ;
+    margin: 10px;
+    padding: 1px;
+    border: 10px solid snow;
+}
+
+    
+main {
+
+    .grid {
+
+    margin: 50px;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto auto;
+    text-align: center;
+}
+    
+footer {
+
+    background-color:rgba(228, 133, 252, 0.789) ;
+    display:flex ;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 10px;
+    padding: 10px;
+    border: 10px solid snow;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+
+@keyframes Ondas {
+0%{
+    background-position: 0% 50%;
+    }
+
+50%{
+    background-position: 100% 50%;
+    }
+50%{
+    background-position: 50% 100%; 
+    }
+}
